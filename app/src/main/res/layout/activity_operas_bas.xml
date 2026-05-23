@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejemplo1.OperasBasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operaciones Básicas"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="220dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:hint="Numero 1"
+            android:inputType="number"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="220dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:hint="Numero 2"
+            android:inputType="number"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/rgOperaciones"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbSumar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sumar"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbRestar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restar" />
+
+            <RadioButton
+                android:id="@+id/rbMultiplicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multiplicar" />
+
+            <RadioButton
+                android:id="@+id/rbDividir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dividir" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="177dp"
+            android:layout_height="61dp"
+            android:text="Resulado: 0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
