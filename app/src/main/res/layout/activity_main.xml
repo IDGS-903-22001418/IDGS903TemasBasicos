@@ -31,4 +31,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
 
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="355dp"
+        android:layout_margin="8dp"
+        android:text="Ejemplo 3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="355dp"
+        android:layout_margin="8dp"
+        android:text="Ejemplo 4"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
 </LinearLayout>
